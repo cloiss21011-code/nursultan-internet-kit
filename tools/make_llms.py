@@ -11,8 +11,13 @@ ORDER = [
     "protocol.md",
     "api.md",
     "examples.md",
+    "architecture.md",
+    "security.md",
     "ai-rules.md",
+    "recipes.md",
     "troubleshooting.md",
+    "faq.md",
+    "changelog.md",
     "sitemap.md",
 ]
 BANNER = "Nursultan Internet Kit — полный корпус документации (proto 1).\n" \

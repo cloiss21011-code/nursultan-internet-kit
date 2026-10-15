@@ -294,3 +294,203 @@ pre {
     animation: none;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* выравнивание с docs.nursultan.fun: детали вёрстки                    */
+/* ------------------------------------------------------------------ */
+
+/* заголовок страницы — белый, как у оригинала */
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+}
+
+/* активный пункт меню: синий + полоска слева */
+.md-nav--primary a.md-nav__link--active {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--md-primary-fg-color);
+  padding-left: 0.7rem;
+}
+
+/* заголовки групп меню: мелкие ПРОПИСНЫЕ серые */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--lighter);
+  margin-top: 1em;
+}
+
+.md-nav--primary .md-nav__item--section:first-child > .md-nav__link {
+  margin-top: 0;
+}
+
+/* название сайта в шапке меню не дублировать */
+.md-sidebar--primary .md-nav__title[for="__drawer"] {
+  display: none;
+}
+
+/* кнопка репозитория в шапке скрыта; репозиторий — в футере */
+.md-header__source {
+  display: none;
+}
+
+/* правая колонка: заголовок ПРОПИСНЫМИ с иконкой */
+.md-nav--secondary .md-nav__title[for="__toc"] {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-nav--secondary .md-nav__title[for="__toc"]::before {
+  content: "\2630\00a0";
+}
+
+/* активный пункт оглавления: синий с полоской */
+.md-nav--secondary .md-nav__link[aria-current],
+.md-nav--secondary .md-nav__link[data-md-state="active"] {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--md-primary-fg-color);
+}
+
+.md-nav--secondary .md-nav__link[data-md-state="fade"] {
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* разделители колонок, как у оригинала */
+.md-sidebar--primary {
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.md-sidebar--secondary {
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* шапка без нижней линии — как у оригинала */
+.md-header {
+  border-bottom-color: transparent;
+}
+
+/* лого32px, как у оригинала */
+.md-header__button.md-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* подсказка клавиши в поиске */
+.md-search__form {
+  position: relative;
+}
+
+.md-search__kbd {
+  position: absolute;
+  right: 2.8rem;
+  display: inline-flex;
+  gap: 2px;
+  pointer-events: none;
+}
+
+.md-search__kbd kbd {
+  font-family: inherit;
+  font-size: 0.625rem;
+  font-weight: 500;
+  padding: 2px 5px;
+  border: 1px solid var(--kit-border);
+  border-radius: 4px;
+  background: var(--kit-secondary);
+  color: var(--md-default-fg-color--lighter);
+  line-height: 1;
+  box-shadow: none;
+}
+
+.md-search__form:focus-within .md-search__kbd {
+  display: none;
+}
+
+/* широкие таблицы скроллятся, а не ломаются */
+.table-scroll {
+  overflow-x: auto;
+  border-radius: 16px;
+}
+
+.md-typeset table:not([class]) td code {
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+/* кнопка «Копировать» справа от заголовка страницы */
+.md-content__inner {
+  position: relative;
+}
+
+.kit-page-actions {
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  display: flex;
+  gap: 6px;
+  z-index: 1;
+}
+
+.kit-page-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color--light);
+  background-color: var(--kit-surface);
+  border: 1px solid var(--kit-card);
+  border-radius: 8px;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+}
+
+.kit-page-actions button:hover {
+  color: var(--md-default-fg-color);
+  border-color: var(--kit-border);
+}
+
+.kit-page-actions__more {
+  padding: 0.45rem 0.5rem !important;
+  position: relative;
+}
+
+.kit-page-actions__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 12rem;
+  padding: 4px;
+  background-color: var(--kit-surface);
+  border: 1px solid var(--kit-border);
+  border-radius: 10px;
+  display: none;
+}
+
+.kit-page-actions__menu.is-open {
+  display: block;
+}
+
+.kit-page-actions__menu button {
+  width: 100%;
+  justify-content: flex-start;
+  border: none;
+  background: none;
+  border-radius: 6px;
+}
+
+.kit-page-actions__menu button:hover {
+  background-color: var(--kit-hover);
+}
+
+@media screen and (max-width: 76.1875em) {
+  .kit-page-actions {
+    display: none;
+  }
+}

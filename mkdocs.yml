@@ -8,6 +8,7 @@ theme:
   name: material
   language: ru
   font: false
+  custom_dir: docs/overrides
   palette:
     - scheme: slate
       primary: indigo
@@ -29,6 +30,7 @@ theme:
     - content.tabs.link
     - search.highlight
     - search.suggest
+    - search.share
 
 plugins:
   - search:
@@ -52,14 +54,26 @@ nav:
       - Протокол: protocol.md
       - API скрипта: api.md
       - Примеры: examples.md
+      - Внутреннее устройство: architecture.md
+      - Безопасность: security.md
   - Генерация:
       - Правила для ИИ: ai-rules.md
+      - Рецепты API: recipes.md
   - Помощь:
       - Решение проблем: troubleshooting.md
+      - Вопросы и ответы: faq.md
+      - Журнал изменений: changelog.md
       - Карта сайта: sitemap.md
 
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/extra.js
+
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cloiss21011-code/nursultan-internet-kit
+      name: nursultan-internet-kit на GitHub

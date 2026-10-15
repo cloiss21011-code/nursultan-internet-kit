@@ -7,8 +7,13 @@
 | Протокол | [protocol.md](protocol.md) | конверт запроса и ответа, jsonpath, ключи, проверки |
 | API скрипта | [api.md](api.md) | функции `internet-core`, шаблон обработчика, таймауты |
 | Примеры | [examples.md](examples.md) | погода, POST, Gemini, Telegram, вебхуки |
+| Внутреннее устройство | [architecture.md](architecture.md) | цикл моста, разбор конверта, jsonpath, атомарная запись, расширение |
+| Безопасность | [security.md](security.md) | модель угроз, allowlist, приватные сети, секреты, чек-лист |
 | Правила для ИИ | [ai-rules.md](ai-rules.md) | инструкция для нейронки, запреты, чек-лист |
+| Рецепты API | [recipes.md](recipes.md) | каталог форм запросов: параметры, ключи, повторы, rate limit |
 | Решение проблем | [troubleshooting.md](troubleshooting.md) | симптом → причина → действие |
+| Вопросы и ответы | [faq.md](faq.md) | частые вопросы по киту и песочнице |
+| Журнал изменений | [changelog.md](changelog.md) | версии кита и совместимость |
 
 Машиночитаемые формы:
 
