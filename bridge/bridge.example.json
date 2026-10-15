@@ -1,6 +1,6 @@
 {
   "proto": 1,
-  "mcpLink": "http://127.0.0.1:63247/mcp/LOCAL-TOKEN-REMOVED",
+  "mcpLink": "",
   "pollMs": 150,
   "allowlist": [],
   "allowPrivate": false,

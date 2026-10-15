@@ -10,7 +10,8 @@
 nursultan-internet-kit/
 ├── bridge/
 │   ├── nursultan_bridge.py      мост, только stdlib Python
-│   └── bridge.json              конфиг
+│   ├── bridge.example.json      шаблон конфига
+│   └── bridge.json              твой конфиг с секретами, в git не попадает
 ├── templates/
 │   ├── net-core.kts             блок сети для вставки в скрипт
 │   ├── example-get.kts          погода, GET по таймеру

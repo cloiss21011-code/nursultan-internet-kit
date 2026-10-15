@@ -6,3 +6,4 @@ site/
 docs/llms-full.txt
 bridge/requests.log
 bridge/bridge-state.json
+bridge/bridge.json

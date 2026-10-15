@@ -10,7 +10,7 @@ function Pass($msg) { Write-Host "[PASS] $msg" -ForegroundColor Green }
 function Fail($msg) { Write-Host "[FAIL] $msg" -ForegroundColor Red; $script:fail++ }
 
 if (-not (Test-Path $configPath)) {
-    Fail "bridge\bridge.json не найден"
+    Fail "bridge\bridge.json не найден — скопируй bridge\bridge.example.json в bridge\bridge.json"
     exit 1
 }
 Pass "конфиг найден: $configPath"
