@@ -2,6 +2,7 @@
 """Сборка docs/llms-full.txt из страниц документации в порядке nav."""
 
 from pathlib import Path
+import sys
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 ORDER = [
