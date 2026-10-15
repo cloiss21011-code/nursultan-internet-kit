@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+build/
+dist/
+site/
+docs/llms-full.txt
+bridge/requests.log
+bridge/bridge-state.json

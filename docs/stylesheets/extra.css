@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* Nursultan Internet Kit — токены docs.nursultan.fun */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #030303;
+  --md-default-fg-color: #f3f3f5;
+  --md-default-fg-color--light: #a1a1aa;
+  --md-default-fg-color--lighter: #8a8a8a;
+  --md-primary-fg-color: #82a2ff;
+  --md-primary-fg-color--light: #8bacff;
+  --md-primary-fg-color--dark: #6b8cff;
+  --md-accent-fg-color: #82a2ff;
+  --md-typeset-a-color: #89abff;
+  --md-code-fg-color: #f3f3f5;
+  --md-code-bg-color: #0a0a0a;
+  --md-code-hl-color: rgba(130, 162, 255, 0.12);
+  --md-code-hl-comment-color: #8a8a8a;
+  --md-code-hl-keyword-color: #ff5b5b;
+  --md-code-hl-string-color: #42d780;
+  --md-code-hl-function-color: #89abff;
+  --md-code-hl-constant-color: #f2b038;
+  --md-code-hl-number-color: #f2b038;
+  --md-header-bg-color: rgba(3, 3, 3, 0.8);
+  --md-search-bg-color: #080808;
+  --md-footer-bg-color: #050505;
+  --md-footer-color: #a1a1aa;
+  --md-selection-bg-color: rgba(130, 162, 255, 0.28);
+  --md-nav-width: 18rem;
+  --md-toc-width: 16rem;
+  --kit-border: rgba(255, 255, 255, 0.1);
+  --kit-card: rgba(52, 52, 52, 0.45);
+  --kit-divider: #202020;
+  --kit-surface: #0a0a0a;
+  --kit-secondary: #121212;
+  --kit-field: #080808;
+  --kit-hover: rgba(255, 255, 255, 0.04);
+  --kit-link-underline: rgba(137, 171, 255, 0.35);
+  --kit-header-bg: rgba(3, 3, 3, 0.8);
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #18181b;
+  --md-default-fg-color--light: #52525b;
+  --md-default-fg-color--lighter: #71717a;
+  --md-primary-fg-color: #4a6cf7;
+  --md-primary-fg-color--light: #6b86f9;
+  --md-primary-fg-color--dark: #3857d6;
+  --md-accent-fg-color: #4a6cf7;
+  --md-typeset-a-color: #2f56e0;
+  --md-code-fg-color: #18181b;
+  --md-code-bg-color: #f7f7f8;
+  --md-code-hl-color: rgba(74, 108, 247, 0.1);
+  --md-code-hl-comment-color: #71717a;
+  --md-header-bg-color: rgba(255, 255, 255, 0.85);
+  --md-search-bg-color: #f4f4f5;
+  --md-footer-bg-color: #fafafa;
+  --md-footer-color: #52525b;
+  --md-selection-bg-color: rgba(74, 108, 247, 0.22);
+  --md-nav-width: 18rem;
+  --md-toc-width: 16rem;
+  --kit-border: rgba(0, 0, 0, 0.1);
+  --kit-card: rgba(0, 0, 0, 0.15);
+  --kit-divider: #e4e4e7;
+  --kit-surface: #f7f7f8;
+  --kit-secondary: #f4f4f5;
+  --kit-field: #f4f4f5;
+  --kit-hover: rgba(0, 0, 0, 0.04);
+  --kit-link-underline: rgba(47, 86, 224, 0.35);
+  --kit-header-bg: rgba(255, 255, 255, 0.85);
+}
+
+/* шрифты */
+
+html,
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* шапка: высота 64, блюр, граница */
+
+[data-md-color-scheme] {
+  --md-header-height: 64px;
+}
+
+.md-header {
+  background-color: var(--kit-header-bg);
+  color: var(--md-default-fg-color);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--kit-border);
+}
+
+.md-header__title,
+.md-header__button,
+.md-header__option {
+  color: var(--md-default-fg-color);
+}
+
+.md-header__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.md-header .md-search__form {
+  background-color: var(--kit-field);
+  border: 1px solid var(--kit-border);
+  border-radius: 10px;
+}
+
+/* сетка: контейнер 1536, колонка контента 840 */
+
+.md-grid {
+  max-width: 1536px;
+}
+
+.md-content__inner {
+  max-width: 52.5rem;
+  margin-inline: auto;
+}
+
+/* типографика: h1 34/42, h2 22/30, h3 18 */
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset dd {
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+.md-typeset h1 {
+  font-size: 2.125rem;
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-size: 1.375rem;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 3rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.125rem;
+  line-height: 1.45;
+  font-weight: 600;
+  margin-top: 2.25rem;
+}
+
+.md-typeset h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+}
+
+/* ссылки в тексте */
+
+.md-typeset a:not(.headerlink):not(.md-nav__link) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--kit-link-underline);
+}
+
+.md-typeset a:not(.headerlink):not(.md-nav__link):hover {
+  text-decoration-color: currentColor;
+}
+
+/* inline code */
+
+.md-typeset code:not([class]) {
+  background-color: var(--kit-secondary);
+  border: 1px solid var(--kit-border);
+  border-radius: 6px;
+  color: var(--md-default-fg-color);
+  padding: 0.1em 0.4em;
+  font-size: 0.875em;
+  overflow-wrap: anywhere;
+}
+
+/* блоки кода: радиус 16, карточная граница */
+
+.md-typeset pre,
+.md-typeset .highlight pre {
+  background-color: var(--kit-surface);
+  border: 1px solid var(--kit-card);
+  border-radius: 16px;
+  font-size: 0.875rem;
+  line-height: 1.571;
+}
+
+/* таблицы: 14px, шапка на surface, линии divider */
+
+.md-typeset table:not([class]) {
+  font-size: 0.875rem;
+  line-height: 1.571;
+  border: 1px solid var(--kit-card);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--kit-surface);
+  color: var(--md-default-fg-color--light);
+  font-weight: 500;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  border-color: var(--kit-divider);
+}
+
+/* левое меню */
+
+.md-nav__link {
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.md-nav__link[aria-current="page"],
+.md-nav__link[aria-current="true"],
+.md-nav__link[data-md-state="page"] {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+/* правая колонка: «Содержание» */
+
+.md-nav--secondary .md-nav__label,
+.md-toc__label {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.md-nav--secondary .md-nav__link[aria-current="true"],
+.md-nav--secondary .md-nav__link[aria-current="page"] {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+/* Prev/Next карточками, как у оригинала */
+
+.md-footer__link {
+  background-color: var(--kit-surface);
+  border: 1px solid var(--kit-card);
+  border-radius: 16px;
+  padding: 1rem 1.125rem;
+}
+
+.md-footer__link:hover {
+  border-color: var(--md-primary-fg-color);
+  background-color: var(--kit-surface);
+  color: var(--md-primary-fg-color);
+}
+
+/* появление контента, как у оригинала */
+
+@keyframes kit-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.md-content__inner {
+  animation: kit-content-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-content__inner {
+    animation: none;
+  }
+}

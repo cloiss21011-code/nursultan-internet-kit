@@ -1,0 +1,65 @@
+site_name: Nursultan Internet Kit
+site_description: Документация моста интернета для скриптов Nursultan
+site_url: https://cloiss21011-code.github.io/nursultan-internet-kit/
+repo_url: https://github.com/cloiss21011-code/nursultan-internet-kit
+repo_name: nursultan-internet-kit
+
+theme:
+  name: material
+  language: ru
+  font: false
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search:
+      lang: ru
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Начало:
+      - Что это: index.md
+      - Установка: install.md
+  - Разработка:
+      - Протокол: protocol.md
+      - API скрипта: api.md
+      - Примеры: examples.md
+  - Генерация:
+      - Правила для ИИ: ai-rules.md
+  - Помощь:
+      - Решение проблем: troubleshooting.md
+      - Карта сайта: sitemap.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
